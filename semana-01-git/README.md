@@ -20,3 +20,20 @@ Em andamento — 4º período
 Colégio Jardim das Nações (CJN)  
 Taubaté, SP, Brasil  
 2019 – 2021
+
+## Habilidades 
+
+**Linguagens de Programação**
+- C 
+- C++ 
+- Java
+
+**Ferramentas**
+- Git e Github
+- Vs Code
+
+**Soft Skills**
+- Comunicação
+- Trabalho em equipe
+- Adaptabilidade
+- Aprendizado Rapido

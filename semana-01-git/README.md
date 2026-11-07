@@ -50,7 +50,7 @@ Taubaté, SP, Brasil
 
 |Semana | Conteudo | Link |
 |:---:|:---:|---|
-|1 |Git e GitHub|<img src="https://imgs.search.brave.com/wswlD856WN9zMT82ID_2Xg_0ytUMiES8sUZwJA4j6Ag/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMi9QaWth/Y2h1LVBORy1IRC5w/bmc" width="48" >&nbsp;[Ver entrega](./semana-01-git/README.md)|
+|1 |Git e GitHub|<img src="https://imgs.search.brave.com/wswlD856WN9zMT82ID_2Xg_0ytUMiES8sUZwJA4j6Ag/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMi9QaWth/Y2h1LVBORy1IRC5w/bmc" width="48" >&nbsp;[Entregue]()|
 |2|HTML e CSS|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
 |3|TypeScript|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
 |4|Tailwind CSS|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|

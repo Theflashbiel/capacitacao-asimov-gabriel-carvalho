@@ -37,3 +37,10 @@ Taubaté, SP, Brasil
 - Trabalho em equipe
 - Adaptabilidade
 - Aprendizado Rapido
+
+
+## Contato
+
+- **GitHub:** [Theflashbiel](https://github.com/Theflashbiel)
+- **LinkedIn:** [Gabriel Carvalho de Toledo e Silva](https://www.linkedin.com/in/gabriel-carvalho-de-toledo-e-silva-6452b1426/)
+- **E-mail:** gabrieltoledo@asimovjr.com.br

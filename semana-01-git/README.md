@@ -14,4 +14,3 @@
 - gitignore não escondia a pasta: ele só vale para arquivos que o Git ainda não rastreia.
 - Que se vc apagar uma coisa na branch da main é muito trabalho pra resolver
 - Na hora de dar o pull request sem querer coloquei a branch teste primeiro e foi tudo que tinha nela, mas como que fiz merge antes os commits que tinha feito na branch da semana-01-git foi pra ela
-

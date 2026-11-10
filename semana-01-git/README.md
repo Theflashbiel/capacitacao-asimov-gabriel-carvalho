@@ -1,64 +1,17 @@
-# Gabriel Carvalho de Toledo e Silva
+# Capacitação Semana 1 
 
-#### Estudante de Engenharia de computação | Assessor de Recursos Humanos
-
-## Sobre Mim
-
-Olá! Sou Gabriel Carvalho, estudante de Engenharia de Computação na Universidade Federal de Itajubá (UNIFEI).
-
-Tenho interesse em desenvolvimento de software e tecnologia. Gosto de aprender coisas novas, resolver problemas e desenvolver projetos que me permitam colocar meus conhecimentos em prática.
-
-
-## Formação Acadêmica
-
-**Engenharia de Computação**  
-Universidade Federal de Itajubá (UNIFEI)  
-Itajubá, MG, Brasil  
-Em andamento — 4º período
-
-**Ensino Médio**  
-Colégio Jardim das Nações (CJN)  
-Taubaté, SP, Brasil  
-2019 – 2021
-
-## Habilidades 
-
-**Linguagens de Programação**
-- C 
-- C++ 
-- Java
-
-**Ferramentas**
-- Git e Github
-- Vs Code
-
-**Soft Skills**
-- Comunicação
-- Trabalho em equipe
-- Adaptabilidade
-- Aprendizado Rapido
+## ✅ O que foi feito
+- Criei duas branchs uma chamada semana-01-git e outra teste pra fazer o conflito de merge
+- Fiz alguns commits na branch da semana-01-git criando a estrutura basica do repositório
+- Deixei configurei o .gitignore para deixar visivel somente a pasta da semana-01-git
+- O conflito de merge foi simulado nas linhas das tabelas que foi feita na branch teste e na hora de dar merge na branch semana-01-git precisou ser arrumada
+- A minha visão unica que foi colocada no projeto é uma coisa bem simples, de colocar imagens do pikachu no sumario das semanas e dependendo do resultado o pikachu está numa pose diferente
 
 
-## Contato
+## 📓 Erros que aprendi  
 
-- **GitHub:** [Theflashbiel](https://github.com/Theflashbiel)
-- **LinkedIn:** [Gabriel Carvalho de Toledo e Silva](https://www.linkedin.com/in/gabriel-carvalho-de-toledo-e-silva-6452b1426/)
-- **E-mail:** gabrieltoledo@asimovjr.com.br
-
-
-## Capacitação Desktop
-
-|Semana | Conteudo | Link |
-|:---:|:---:|---|
-|1 |Git e GitHub|<img src="https://imgs.search.brave.com/wswlD856WN9zMT82ID_2Xg_0ytUMiES8sUZwJA4j6Ag/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMi9QaWth/Y2h1LVBORy1IRC5w/bmc" width="48" >&nbsp;[Ver entrega](./semana-01-git/README.md)|
-|2|HTML e CSS|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
-|3|TypeScript|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
-|4|Tailwind CSS|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
-|5|Angular Parte 1|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
-|6|Angular Parte 2|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
-|7|Firebase|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
-|8|MongoDB Parte 1|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
-|9|MongoDB Parte 2|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
-|10|Notion|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
-|11/12|Projeto Final|<img src="https://imgs.search.brave.com/DXrWLv1t2jF__jrZLcOa09ngXFOdnJIp2OQS8xnxmI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZmF2cG5nLmNvbS8x/NC8xNy83L3Bpa2Fj/aHUtc2xlZXBpbmct/cGlrYWNodS1jYXJ0/b29uLWNoYXJhY3Rl/ci1CcHQzZmhMOF90/LmpwZw" width="48"> _Não Realizado_|
+- git push sem upstream: o Git pediu --set-upstream, entendi que a branch local não existia no GitHub.
+- gitignore não escondia a pasta: ele só vale para arquivos que o Git ainda não rastreia.
+- Que se vc apagar uma coisa na branch da main é muito trabalho pra resolver
+- Na hora de dar o pull request sem querer coloquei a branch teste primeiro e foi tudo que tinha nela, mas como que fiz merge antes os commits que tinha feito na branch da semana-01-git foi pra ela
 

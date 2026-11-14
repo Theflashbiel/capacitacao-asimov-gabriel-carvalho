@@ -1,3 +1,23 @@
+:root {
+    --fundo: #F0E8E6;
+    --card: #FAF7F6;
+    --texto: #2A1A1A;
+    --texto-suave: #6B5B5B;
+    --link: #64748b;
+    --destaque: #B91C1C;
+    --sombra: rgba(42, 26, 26, 0.10);
+}
+
+[data-tema="escuro"] {
+   --fundo: #12101c;
+    --card: #1c1a2b;
+    --texto: #e8e6f0;
+    --texto-suave: #a9a5bd;
+    --link: #a5b4fc;
+    --destaque: #f87171;
+    --sombra: rgba(0, 0, 0, 0.5);
+    color-scheme: dark;
+}
 
 html,body {
     margin: 0px;
@@ -8,25 +28,44 @@ html,body {
 
 body{
 
-    background-color: #F0E8E6;
+    background-color: var(--fundo);
 
+}
+
+body, .navegacao, .curriculo, .contato, .portfolio, .asimov {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#botao-tema {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--destaque);
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px var(--sombra);
+    z-index: 10;
 }
 
 .navegacao {
 
 
-    background-color: #F0E8E6;
-    color: #64748b;
+    background-color: var(--fundo);
+    color: var(--link);
     height: 50px;
     animation-name: navegation;
     animation-duration: 4s;
 }
 
 .navegacao ul {
-    margin-top: 0;
+    margin-top: 20px;
     list-style: none;
     padding-left: 0;
-    text-align: right;
+    text-align: center;
     height: 50px;
 }
 .navegacao li{
@@ -34,15 +73,15 @@ body{
     padding-left: 30px;
     padding-right: 30px;
     line-height: 50px;
-    font-size: 18px;
+    font-size: 30px;
 }
 .navegacao a {
-    color: #64748b;
+    color: var(--link);
     text-decoration: none;
 }
 
 .navegacao a:hover {
-    color: #B91C1C;
+    color: var(--destaque);
 }
 
 #menu-toggle,
@@ -64,32 +103,41 @@ body{
         line-height: 50px;
         padding: 0 20px;
         cursor: pointer;
-        color: #64748b;
+        color: var(--link);
         text-align: right;
     }
 
     .navegacao ul {
-        display: none;
+        display: flex;
         flex-direction: column;
         text-align: center;
         padding: 0;
         margin: 0;
         height: auto;
+
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
     }
 
     .navegacao li {
-        display: block;
-        padding: 0;
-        line-height: 50px;
+        transform: translateY(-10px);
+        transition: transform 0.4s ease;
     }
 
     #menu-toggle:checked ~ ul {
-        display: flex;
+        max-height: 250px;
+        opacity: 1;
+    }
+
+    #menu-toggle:checked ~ ul li {
+        transform: translateY(0);
     }
 }
 .capa {
     display: flex;
-    
+
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -97,20 +145,20 @@ body{
     min-height: calc(100vh - 50px);
     padding: 0 40px;
     box-sizing: border-box;
-    
+
 }
 
 .capa h1 {
-    color: #2a1a1a;
+    color: var(--texto);
 }
 
 .capa h1 span {
-    color: #B91C1C;
+    color: var(--destaque);
     display: block;
 }
 
 .capa h2 {
-    color: #6B5B5B;
+    color: var(--texto-suave);
 }
 
 .foto-perfil {
@@ -164,7 +212,7 @@ body{
         flex: 0 0 auto;
         text-align: center;
     }
-    
+
 }
 .curriculo{
     font-size: 16px;
@@ -174,33 +222,33 @@ body{
     padding: 25px 35px;
     box-sizing: border-box;
 
-    background-color: #FAF7F6;
+    background-color: var(--card);
     border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(42, 26, 26, 0.10);
+    box-shadow: 0px 4px 15px var(--sombra);
     animation-name: conteudo;
     animation-duration: 2s;
 
 }
 .curriculo h1{
 
-    color: #B91C1C;
+    color: var(--destaque);
    font-size: 40px;
 }
 .curriculo h2{
 
-    color: #2A1A1A;
+    color: var(--texto);
     font-size: 24px;
     margin-top: 40px;
-    
+
 }
 .curriculo h3{
 
-    color: #2A1A1A;
+    color: var(--texto);
     font-size: 20px;
-   
+
 }
 .curriculo p{
-    color: #2A1A1A;
+    color: var(--texto);
     line-height: 20px;
     text-align: justify;
 }
@@ -211,22 +259,23 @@ body{
     margin-right: 10px;
 }
 .curriculo a {
-    color: #64748b;
+    color: var(--link);
     text-decoration: none;
 }
 .curriculo a:hover {
-    color: #B91C1C;
+    color: var(--destaque);
 }
 #foto {
     width: 250px;
     aspect-ratio: 1;
+    object-fit: cover;
     float: left ;
     margin-right: 20px;
     border-radius: 50%;
 }
 .contato {
 
-    
+
     font-size: 16px;
     width: 90%;
     max-width: 1200px;
@@ -234,52 +283,52 @@ body{
     padding: 25px 35px;
     box-sizing: border-box;
 
-    background-color: #FAF7F6;
+    background-color: var(--card);
     border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(42, 26, 26, 0.10);
+    box-shadow: 0px 4px 15px var(--sombra);
     animation-name: conteudo;
     animation-duration: 2s;
 }
 
 .contato h1 {
-    color: #B91C1C;
+    color: var(--destaque);
    font-size: 50px;
 }
 .contato h2{
 
-    color: #2A1A1A;
+    color: var(--texto);
     font-size: 24px;
     margin-top: 40px;
-    
+
 }
 .contato h3{
 
-    color: #2A1A1A;
+    color: var(--texto);
     font-size: 20px;
-   
+
 }
 .contato p{
-    color: #2A1A1A;
+    color: var(--texto);
     line-height: 20px;
     text-align: justify;
 }
 
 .contato a {
-    color: #64748b;
+    color: var(--link);
     text-decoration: none;
 }
 
 .contato a:hover {
-    color: #B91C1C;
+    color: var(--destaque);
 }
 @media (max-width: 800px) {
     html {
-        scrollbar-width: none;     
-        -ms-overflow-style: none;   
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
 
     html::-webkit-scrollbar {
-        display: none;             
+        display: none;
     }
     #foto {
         float: none;
@@ -298,52 +347,52 @@ body{
 }
 .portfolio {
 
-    
+
     font-size: 16px;
     width: 95%;
-    max-width: 1900px;      
-    min-height: 800px;      
+    max-width: 1900px;
+    min-height: 800px;
     margin: 40px auto;
-    padding: 50px 60px;     
+    padding: 50px 60px;
     box-sizing: border-box;
 
-    background-color: #FAF7F6;
+    background-color: var(--card);
     border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(42, 26, 26, 0.10);
+    box-shadow: 0px 4px 15px var(--sombra);
     animation-name: conteudo;
     animation-duration: 2s;
 }
 
 .portfolio h1 {
-    color: #B91C1C;
+    color: var(--destaque);
    font-size: 50px;
 }
 .portfolio h2{
 
-    color: #2A1A1A;
+    color: var(--texto);
     font-size: 24px;
     margin-top: 40px;
-    
+
 }
 .portfolio h3{
 
-    color: #2A1A1A;
+    color: var(--texto);
     font-size: 20px;
-   
+
 }
 .portfolio p{
-    color: #2A1A1A;
+    color: var(--texto);
     line-height: 20px;
     text-align: justify;
 }
 
 .portfolio a {
-    color: #64748b;
+    color: var(--link);
     text-decoration: none;
 }
 
 .portfolio a:hover {
-    color: #B91C1C;
+    color: var(--destaque);
 }
 .miniatura {
 
@@ -387,10 +436,20 @@ body{
     color: white;
     margin-top: 0;
 }
+[data-tema="escuro"] .blackbox {
+    background-color: #f0e8e6;
+}
 
+[data-tema="escuro"] .blackboxtexto h1 {
+    color: #B91C1C;
+}
+
+[data-tema="escuro"] .blackboxtexto h2 {
+    color: #2A1A1A;
+}
 .asimov {
 
-    
+
     font-size: 16px;
     width: 90%;
     max-width: 1200px;
@@ -399,51 +458,51 @@ body{
     padding: 40px 60px;
     box-sizing: border-box;
 
-    background-color: #FAF7F6;
+    background-color: var(--card);
     border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(42, 26, 26, 0.10);
+    box-shadow: 0px 4px 15px var(--sombra);
     animation-name: conteudo;
     animation-duration: 2s;
 }
 
 .asimov h1 {
-    color: #B91C1C;
+    color: var(--destaque);
    font-size: 50px;
    text-align: center;
 }
 .asimov h2{
 
-    color: #2A1A1A;
+    color: var(--texto);
     font-size: 24px;
     margin-top: 40px;
-    
+
 }
 .asimov h3{
 
-    color: #2A1A1A;
+    color: var(--texto);
     font-size: 20px;
-   
+
 }
 .asimov p{
-    color: #2A1A1A;
+    color: var(--texto);
     line-height: 20px;
     text-align: justify;
     font-size: 20px;
 }
 
 .asimov a {
-    color: #64748b;
+    color: var(--link);
     text-decoration: none;
 }
 
 .asimov a:hover {
-    color: #B91C1C;
+    color: var(--destaque);
 }
 
 .fotos{
 
     width: 100%;
-    
+
     height: auto;
     display: block;
     margin: 0 auto;

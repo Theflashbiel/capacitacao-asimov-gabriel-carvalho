@@ -42,57 +42,71 @@ body{
 .navegacao a:hover {
     color: #B91C1C;
 }
-.capa h1 {
-
-    color: #2a1a1a
-
+.capa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    min-height: calc(100vh - 50px);
+    padding: 0 40px;
+    box-sizing: border-box;
 }
-.capa h1 spam{
 
+.capa h1 {
+    color: #2a1a1a;
+}
+
+.capa h1 span {
     color: #B91C1C;
     display: block;
-    
 }
+
 .capa h2 {
-    
     color: #6B5B5B;
 }
-.capa div {
 
-    display: inline-block;
-    height: 650px;
+.foto-perfil {
+    flex: 0 1 400px;
 }
+
+.foto-perfil img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .texto-perfil {
-   
-    vertical-align: top;
-    width: 60%;
-    margin-top: 300px;
+    flex: 0 1 auto;
+    text-align: left;
 }
 
 .texto-perfil h1 {
-   
-    font-size: 58px;
-    line-height: 54px;
+    font-size: clamp(32px, 5vw, 58px);
+    line-height: 1.1;
 }
 
 .texto-perfil h2 {
-    margin-top: -30px;
+    margin-top: 10px;
     font-size: 16px;
 }
 
-.foto-perfil{
-    display: flex;
-    width: 40%;
-    text-align: center;
-    margin-top: 200px;
-}
-.foto-perfil img{
-    width: 400px;
-    height: auto;
-    border-radius: 400px;
+@media (max-width: 800px) {
+    .capa {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
 
+    .foto-perfil img {
+        max-width: 250px;
+        margin: 0 auto;
+    }
 }
-
 .curriculo{
     font-size: 16px;
     width: 90%;
@@ -280,4 +294,66 @@ body{
     font-size: 16px;
     color: white;
     margin-top: 0;
+}
+
+.asimov {
+
+    
+    font-size: 16px;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 600px;
+    margin: 40px auto;
+    padding: 40px 60px;
+    box-sizing: border-box;
+
+    background-color: #FAF7F6;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(42, 26, 26, 0.10);
+
+}
+
+.asimov h1 {
+    color: #B91C1C;
+   font-size: 50px;
+   text-align: center;
+}
+.asimov h2{
+
+    color: #2A1A1A;
+    font-size: 24px;
+    margin-top: 40px;
+    
+}
+.asimov h3{
+
+    color: #2A1A1A;
+    font-size: 20px;
+   
+}
+.asimov p{
+    color: #2A1A1A;
+    line-height: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.asimov a {
+    color: #64748b;
+    text-decoration: none;
+}
+
+.asimov a:hover {
+    color: #B91C1C;
+}
+
+.fotos{
+
+    width: 100%;
+    
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
 }

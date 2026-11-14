@@ -18,6 +18,8 @@ body{
     background-color: #F0E8E6;
     color: #64748b;
     height: 50px;
+    animation-name: navegation;
+    animation-duration: 4s;
 }
 
 .navegacao ul {
@@ -42,8 +44,52 @@ body{
 .navegacao a:hover {
     color: #B91C1C;
 }
+
+#menu-toggle,
+.menu-icone {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .navegacao {
+        position: relative;
+        height: auto;
+    }
+
+    .menu-icone {
+        display: block;
+        font-size: 32px;
+        line-height: 50px;
+        padding: 0 20px;
+        cursor: pointer;
+        color: #64748b;
+        text-align: right;
+    }
+
+    .navegacao ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+
+    .navegacao li {
+        display: block;
+        padding: 0;
+        line-height: 50px;
+    }
+
+    #menu-toggle:checked ~ ul {
+        display: flex;
+    }
+}
 .capa {
     display: flex;
+    
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -51,6 +97,7 @@ body{
     min-height: calc(100vh - 50px);
     padding: 0 40px;
     box-sizing: border-box;
+    
 }
 
 .capa h1 {
@@ -68,6 +115,8 @@ body{
 
 .foto-perfil {
     flex: 0 1 400px;
+    animation-name: foto-capa;
+    animation-duration: 3s;
 }
 
 .foto-perfil img {
@@ -82,6 +131,8 @@ body{
 .texto-perfil {
     flex: 0 1 auto;
     text-align: left;
+    animation-name: texto-capa;
+    animation-duration: 5s;
 }
 
 .texto-perfil h1 {
@@ -98,14 +149,22 @@ body{
     .capa {
         flex-direction: column;
         text-align: center;
-        gap: 30px;
-        padding: 40px 20px;
+        gap: 20px;
+        padding: 60px 20px;
+        min-height: auto;
     }
-
+    .foto-perfil {
+        flex: 0 0 auto;
+    }
     .foto-perfil img {
         max-width: 250px;
         margin: 0 auto;
     }
+    .texto-perfil {
+        flex: 0 0 auto;
+        text-align: center;
+    }
+    
 }
 .curriculo{
     font-size: 16px;
@@ -118,6 +177,8 @@ body{
     background-color: #FAF7F6;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(42, 26, 26, 0.10);
+    animation-name: conteudo;
+    animation-duration: 2s;
 
 }
 .curriculo h1{
@@ -158,9 +219,10 @@ body{
 }
 #foto {
     width: 250px;
+    aspect-ratio: 1;
     float: left ;
     margin-right: 20px;
-    border-radius: 100px;
+    border-radius: 50%;
 }
 .contato {
 
@@ -175,7 +237,8 @@ body{
     background-color: #FAF7F6;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(42, 26, 26, 0.10);
-
+    animation-name: conteudo;
+    animation-duration: 2s;
 }
 
 .contato h1 {
@@ -209,6 +272,30 @@ body{
 .contato a:hover {
     color: #B91C1C;
 }
+@media (max-width: 800px) {
+    html {
+        scrollbar-width: none;     
+        -ms-overflow-style: none;   
+    }
+
+    html::-webkit-scrollbar {
+        display: none;             
+    }
+    #foto {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 200px;
+    }
+
+    .curriculo {
+        padding: 25px 20px;
+    }
+
+    .curriculo p {
+        text-align: left;
+    }
+}
 .portfolio {
 
     
@@ -223,6 +310,8 @@ body{
     background-color: #FAF7F6;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(42, 26, 26, 0.10);
+    animation-name: conteudo;
+    animation-duration: 2s;
 }
 
 .portfolio h1 {
@@ -276,9 +365,12 @@ body{
     background-color: black;
     opacity: 0;
     padding-top: 120px;
+    transition: 1s;
+
 }
 .blackbox:hover{
     opacity: 0.8;
+    transition: 1s;
 }
 .blackboxtexto {
 
@@ -310,7 +402,8 @@ body{
     background-color: #FAF7F6;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(42, 26, 26, 0.10);
-
+    animation-name: conteudo;
+    animation-duration: 2s;
 }
 
 .asimov h1 {
@@ -356,4 +449,27 @@ body{
     margin: 0 auto;
     margin-bottom: 20px;
 
+}
+
+@keyframes foto-capa {
+    0%{ opacity:0 ;transform: translate(0px,40px);}
+    100%{opacity:1 ;transform: translate(0px,0px);}
+
+}
+
+@keyframes texto-capa {
+    0%{ opacity:0 ;transform: translate(-10px,-40px);}
+    100%{opacity:1 ;transform: translate(0px,0px);}
+
+}
+@keyframes navegation {
+    0%{ opacity:0;}
+    50%{ opacity:0;}
+    100%{opacity:1;}
+
+}
+
+@keyframes conteudo {
+    0%{ opacity:0 ;transform: translate(-20px,-0px);}
+    100%{opacity:1 ;transform: translate(0px,0px);}
 }

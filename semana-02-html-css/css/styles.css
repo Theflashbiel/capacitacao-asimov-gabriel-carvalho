@@ -104,51 +104,7 @@ body, .navegacao, .curriculo, .contato, .portfolio, .asimov {
 }
 
 
-@media (max-width: 768px) {
 
-    .navegacao {
-        position: relative;
-        height: auto;
-    }
-
-    .menu-icone {
-        display: block;
-        font-size: 32px;
-        line-height: 50px;
-        padding: 0 20px;
-        cursor: pointer;
-        color: var(--link);
-        text-align: right;
-    }
-
-    .navegacao ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        height: auto;
-
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transition: max-height 0.4s ease, opacity 0.4s ease;
-    }
-
-    .navegacao li {
-        transform: translateY(-10px);
-        transition: transform 0.4s ease;
-    }
-
-    #menu-toggle:checked ~ ul {
-        max-height: 250px;
-        opacity: 1;
-    }
-
-    #menu-toggle:checked ~ ul li {
-        transform: translateY(0);
-    }
-}
 .capa {
     display: flex;
 
@@ -207,27 +163,7 @@ body, .navegacao, .curriculo, .contato, .portfolio, .asimov {
     font-size: 16px;
 }
 
-@media (max-width: 800px) {
-    .capa {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-        padding: 60px 20px;
-        min-height: auto;
-    }
-    .foto-perfil {
-        flex: 0 0 auto;
-    }
-    .foto-perfil img {
-        max-width: 250px;
-        margin: 0 auto;
-    }
-    .texto-perfil {
-        flex: 0 0 auto;
-        text-align: center;
-    }
 
-}
 .curriculo{
     font-size: 16px;
     width: 90%;
@@ -336,30 +272,7 @@ body, .navegacao, .curriculo, .contato, .portfolio, .asimov {
 .contato a:hover {
     color: var(--destaque);
 }
-@media (max-width: 800px) {
-    html {
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
 
-    html::-webkit-scrollbar {
-        display: none;
-    }
-    #foto {
-        float: none;
-        display: block;
-        margin: 0 auto 20px auto;
-        width: 200px;
-    }
-
-    .curriculo {
-        padding: 25px 20px;
-    }
-
-    .curriculo p {
-        text-align: left;
-    }
-}
 .portfolio {
 
 
@@ -409,18 +322,26 @@ body, .navegacao, .curriculo, .contato, .portfolio, .asimov {
 .portfolio a:hover {
     color: var(--destaque);
 }
-.miniatura {
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
 
-    width: 320px;
+.miniatura {
+    width: 100%;
+    max-width: 320px;
     height: 320px;
     background-size: contain;
-    display: inline-block;
-    margin-right: 15px;
-    margin-bottom: 15px;
     overflow: hidden;
 }
 .miniatura a{
     text-decoration: none;
+}
+.miniatura-asimov {
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .blackbox{
 
@@ -451,6 +372,7 @@ body, .navegacao, .curriculo, .contato, .portfolio, .asimov {
     color: white;
     margin-top: 0;
 }
+
 [data-tema="escuro"] .blackbox {
     background-color: #f0e8e6;
 }
@@ -514,6 +436,8 @@ body, .navegacao, .curriculo, .contato, .portfolio, .asimov {
     color: var(--destaque);
 }
 
+
+
 .fotos{
 
     width: 100%;
@@ -546,4 +470,167 @@ body, .navegacao, .curriculo, .contato, .portfolio, .asimov {
 @keyframes conteudo {
     0%{ opacity:0 ;transform: translate(-20px,-0px);}
     100%{opacity:1 ;transform: translate(0px,0px);}
+}
+
+footer p {
+    font-size: 14px;
+    text-align: center;
+    color: #6B5B5B;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .navegacao {
+        position: relative;
+        height: auto;
+    }
+
+    .menu-icone {
+        display: block;
+        font-size: 32px;
+        line-height: 50px;
+        padding: 0 20px;
+        cursor: pointer;
+        color: var(--link);
+        text-align: right;
+    }
+
+    .navegacao ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        height: auto;
+
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+
+    .navegacao li {
+        transform: translateY(-10px);
+        transition: transform 0.4s ease;
+    }
+
+    #menu-toggle:checked ~ ul {
+        max-height: 250px;
+        opacity: 1;
+    }
+
+    #menu-toggle:checked ~ ul li {
+        transform: translateY(0);
+    }
+}
+@media (max-width: 800px) {
+    .capa {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 60px 20px;
+        min-height: auto;
+    }
+    .foto-perfil {
+        flex: 0 0 auto;
+    }
+    .foto-perfil img {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .texto-perfil {
+        flex: 0 0 auto;
+        text-align: center;
+    }
+
+}
+@media (max-width: 800px) {
+    html {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    html::-webkit-scrollbar {
+        display: none;
+    }
+    #foto {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 200px;
+    }
+
+    .curriculo {
+        padding: 25px 20px;
+    }
+
+    .curriculo p {
+        text-align: left;
+    }
+}
+@media (max-width: 800px) {
+    .asimov {
+        width: 94%;
+        margin: 20px auto;
+        padding: 25px 20px;
+        min-height: auto;
+    }
+
+    .asimov h1 {
+        font-size: 34px;
+    }
+
+    .asimov h2 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .asimov p {
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+@media (max-width: 800px) {
+    .portfolio {
+        width: 94%;
+        margin: 20px auto;
+        padding: 25px 20px;
+        min-height: auto;
+    }
+
+    .portfolio h1 {
+        font-size: 34px;
+    }
+
+    .portfolio h2 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .portfolio p {
+        text-align: left;
+    }
+}
+@media (max-width: 800px) {
+    .miniatura {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto 15px auto;
+    }
+}
+@media (max-width: 480px) {
+    .asimov {
+        padding: 20px 15px;
+    }
+
+    .asimov h1 {
+        font-size: 28px;
+    }
+
+    .asimov p {
+        font-size: 16px;
+    }
 }

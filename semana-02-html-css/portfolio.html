@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <link rel ="stylesheet" href="css/styles.css">
-        <title>Portfólio-Gabriel Carvalho</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
 
-    <body>
-         <div class ="navegacao">
-            <button id="botao-tema" aria-label="Alternar tema">🌙</button>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfólio - Gabriel Carvalho</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <button id="botao-tema" aria-label="Alternar tema">🌙</button>
+
+        <nav class="navegacao">
             <input type="checkbox" id="menu-toggle">
-             <label for="menu-toggle" class="menu-icone">&#9776;</label>
+            <label for="menu-toggle" class="menu-icone">&#9776;</label>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href = "portfolio.html">Portfolio</a></li>
-                <li><a href ="curriculo.html">Currículo</a></li>
-               <li><a href = "contato.html"> Contato</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
-            
-        </div>
-        <div class="portfolio">
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio">
             <h1>Portfolio</h1>
-           
-                <div style= " background-image: url('img/logo.png')" class = "miniatura">
-                     <a href ="projeto-asimov.html"> 
+            
+            <div class="galeria">
+            <div class="miniatura miniatura-asimov">
+                <a href="projeto-asimov.html" aria-label="Ver projeto Asimov Junior">
                     <div class="blackbox">
-                        <div class ="blackboxtexto">
+                        <div class="blackboxtexto">
                             <h1>Asimov Junior</h1>
                             <h2>Assessor de Recursos Humanos</h2>
                         </div>
                     </div>
-                    </a>
-                </div>                            
-        </div>
-        <script src="js/botao.js"></script>
-    </body>
+                </a>
+            </div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>© 2026 Gabriel Carvalho</p>
+    </footer>
+
+    <script src="js/botao.js"></script>
+</body>
 
 </html>
